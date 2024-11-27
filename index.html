@@ -1,77 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PM Meets Market</title>
-<style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PM Meets Market</title>
+    <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            line-height: 1.6;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
         }
         header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
+            background-color: #111;
+            padding: 20px;
             text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            margin: 0;
         }
         nav {
-            margin: 0;
-            padding: 1rem;
-            background: #555;
+            margin: 20px 0;
             text-align: center;
         }
         nav a {
-            color: white;
+            color: #fff;
             text-decoration: none;
-            margin: 0 10px;
-            padding: 5px 10px;
-            background: #666;
-            border-radius: 5px;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s;
         }
         nav a:hover {
-            background: #444;
+            color: #888;
         }
-        main {
-            padding: 2rem;
-            text-align: center;
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
         }
-        main img {
-            max-width: 100%;
-            height: auto;
+        .post {
+            margin-bottom: 40px;
+            border-bottom: 1px solid #444;
+            padding-bottom: 20px;
+        }
+        .post h2 {
+            color: #fff;
+        }
+        .post p {
+            line-height: 1.6;
         }
         footer {
-            background: #333;
-            color: #fff;
             text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
+            padding: 20px;
+            background-color: #111;
+            color: #aaa;
+            position: sticky;
+            bottom: 0;
+            z-index: 1000;
         }
-</style>
+        .integrations {
+            margin: 20px 0;
+        }
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #fff;
+        }
+        .social-links a:hover {
+            color: #888;
+        }
+    </style>
 </head>
 <body>
+
 <header>
-<h1>Welcome to My Product Management Journey</h1>
-<p>
-Hi, I'm Kaushik Sundar ,a seasoned product manager passionate about building impactful products and fostering innovation. Over the years, I've gained invaluable insights into product design, strategy, and execution, which I’m excited to share with you.
+    <h1>Welcome to PM Meets Market</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#resources">Resources</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="content">
+    <section id="about" class="post">
+        <h2>About Me</h2>
+        <p>Welcome to my blog where I share insights on product management, stock market analysis, and more. Join me as we explore ideas and break down products.</p>
+    </section>
+
+    <section id="blog" class="post">
+        <h2>Latest Post</h2>
+        <p>Hi, I'm Kaushik Sundar ,a seasoned product manager passionate about building impactful products and fostering innovation. Over the years, I've gained invaluable insights into product design, strategy, and execution, which I’m excited to share with you.
 This blog is a space where I break down complex product management concepts, explore new ideas, analyze market trends, and share stories from my own experiences. Whether you're an aspiring PM, a seasoned professional, or simply curious about the craft of building products, you'll find something here to spark your interest.
 I also delve into stock market analysis, combining strategic thinking with market insights, offering a unique perspective on investments and trends.
 Join me as we explore the art and science of product management, design, and the dynamic world of markets. Let's learn, grow, and create together!</p>
-</header>
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">Resources</a>
-<a href="pmblog.html">Blog</a>
-</nav>
-<main>
-<h2>About This Page</h2>
-<p>PM Meets the Market is a blog dedicated to the journey in product management and exploring the latest in product management,design and Innovation. Join us on our journey to discover new perspectives and stay ahead in the fast-paced world of product development</p>
-<img src="https://via.placeholder.com/600x300" alt="Sample Image">
-</main>
+    </section>
+
+    <div class="integrations">
+        <h3>Subscribe for Updates</h3>
+        <form action="#" method="post">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+
+    <div class="social-links">
+        <h3>Follow Me</h3>
+        <a href="#" target="_blank">LinkedIn</a>
+    </div>
+</div>
+
 <footer>
-<p>&copy; 2024 PM Meets Market Page</p>
+    <p>&copy; 2024 PM Meets Market Page.</p>
 </footer>
+
 </body>
 </html>
