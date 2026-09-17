@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "title": "AI-Powered Scientific Research Assistant",
+      "problem": "Researchers spent weeks manually analyzing large scientific datasets and publications.",
+      "approach": "Shaped an end-to-end GenAI platform using RAG and GPT, Claude, and Gemini workflows, with structured outputs and human-in-the-loop validation aligned to enterprise data governance.",
+      "impact": "Reduced research analysis from months to weeks, accelerating scientific discovery and user adoption.",
+      "order": 1,
+      "status": "active"
+    },
+    {
+      "title": "Software Download & Licensing Platform",
+      "problem": "Fragmented third-party tools and redundant software licenses created high operating costs across divisions.",
+      "approach": "Owned the product lifecycle from discovery through scaling for a centralized platform covering software distribution, entitlements, subscriptions, and licensing.",
+      "impact": "Identified approximately $2M in cost savings, validated $650K in immediate savings with $1.5M projected, and supported approximately 10% month-over-month active-user growth.",
+      "order": 2,
+      "status": "active"
+    },
+    {
+      "title": "Analytical Data Store & Semantic Knowledge Graph",
+      "problem": "Fragmented proteomics data across instruments and labs limited interoperability, cross-study insights, and research decisions.",
+      "approach": "Led solution shaping and dependency management for a Kubernetes-based microservices platform spanning FAIR data standardization, ingestion pipelines, ontology validation, semantic integration, and LLM/RAG querying.",
+      "impact": "Enabled AI-driven data discovery and cross-lab interoperability, accelerating proteomics research insights for scientists.",
+      "order": 3,
+      "status": "active"
+    }
+  ]
+}
