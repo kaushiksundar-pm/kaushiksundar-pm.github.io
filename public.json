@@ -1,5 +1,92 @@
 {
   "projects": [
+
+    {
+    {
+  "title": "AI-Powered Scientific Research Assistant",
+  "eyebrow": "Product Case Study — AI & Platform Infrastructure",
+  "role": "Technical Product Manager",
+  "stack": [
+    "GPT",
+    "Claude",
+    "Gemini",
+    "Multi-Model Orchestration",
+    "LangChain",
+    "Vector Databases",
+    "Kubernetes"
+  ],
+  "context": "Researchers and scientists spent weeks manually parsing thousands of unstructured scientific publications, laboratory notebooks, and dense biochemical datasets. Finding, extracting, and cross-referencing information was slow, highly siloed, and prone to human error.",
+  "technicalHurdles": [
+    {
+      "title": "Hallucination Risks",
+      "description": "In scientific and clinical environments, unsupported LLM responses can invalidate research and lead to costly laboratory workflow errors."
+    },
+    {
+      "title": "Lack of Provenance",
+      "description": "Standard generative AI systems do not inherently track the precise source or original coordinates of extracted facts."
+    },
+    {
+      "title": "Data Silos",
+      "description": "Scientific content arrived in fragmented formats, including PDFs, proprietary instrument files, and genomic sequences that traditional pipelines could not process consistently."
+    }
+  ],
+  "strategy": "Led the discovery phase through interviews with lead scientists to identify critical friction points. Rather than building a generic wrapper around a single AI model, shaped a multi-tenant orchestration platform that converts unstructured documents into provenance-aware, structured scientific assets.",
+  "tradeoffs": [
+    {
+      "title": "Multi-LLM Strategy vs. Single Model Vendor",
+      "description": "Designed a dynamic workflow using GPT, Claude, and Gemini because different models offered distinct strengths in semantic reasoning, large-table processing, cost efficiency, and performance."
+    },
+    {
+      "title": "Proactive Constraints vs. Passive Filtering",
+      "description": "Prioritized structured templates and validated schemas over unrestricted free-form prompts so generated outputs could conform to scientific data requirements."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Dynamic RAG Pipeline",
+      "description": "Shaped an enterprise Retrieval-Augmented Generation pipeline covering document ingestion, intelligent text chunking, semantic metadata tagging, and specialized knowledge-graph indexing."
+    },
+    {
+      "title": "Multi-Model Orchestration and Structured Outputs",
+      "description": "Designed an extraction layer that converts raw scientific text into structured JSON and Pydantic-compatible schemas, supported by programmatic validation against predefined scientific ontologies."
+    },
+    {
+      "title": "Traceable Citation Provenance",
+      "description": "Established metadata tracking so generated insights could be linked to their source document, page number, and bounding-box coordinates for rapid scientist verification."
+    },
+    {
+      "title": "Human-in-the-Loop Validation",
+      "description": "Implemented review workflows requiring credentialed scientists to validate AI-generated conclusions before they entered downstream laboratory processes."
+    }
+  ],
+  "operatingModel": [
+    {
+      "title": "Spec-Driven Development",
+      "description": "Introduced a Markdown-based specification framework that clarified end-to-end user journeys and exposed API and platform dependencies earlier in delivery."
+    },
+    {
+      "title": "Pod and Squad Governance",
+      "description": "Led four cross-functional delivery teams comprising approximately 25 data scientists, machine-learning engineers, product specialists, and UX professionals."
+    }
+  ],
+  "outcomes": [
+    {
+      "title": "Research Velocity",
+      "description": "Reduced scientific data extraction and synthesis workflows from weeks to hours, helping research teams evaluate and adjust discovery strategies more quickly."
+    },
+    {
+      "title": "Trust and Auditability",
+      "description": "Improved governance through provenance-aware processing, structured validation, traceable citations, and human approval controls."
+    },
+    {
+      "title": "Platform Reusability",
+      "description": "Designed reusable extraction services with structured REST API contracts so additional digital chemistry products could consume the platform capabilities."
+    }
+  ],
+  "order": 1,
+  "status": "active"
+}
+    
     {
       "title": "AI-Powered Scientific Research Assistant",
       "problem": "Researchers spent weeks manually analyzing large scientific datasets and publications.",
