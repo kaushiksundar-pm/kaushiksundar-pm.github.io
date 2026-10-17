@@ -151,7 +151,7 @@
               <p>Directed the end-to-end release strategy and value-realization telemetry for a unified Software Download Portal. 
                 The launch achieved an approximate 10% MoM active-user growth while securing $650K in immediate savings and $1.5M in projected long-term value.</p>
             </div>
-            <strong>Clearer alignment<br>Faster execution</strong>
+            <strong>$650K immediate<br>$1.5M projected</strong>
           </article>
           <article class="system-row" data-reveal>
             <p class="system-index">Product Discovery</p>
@@ -177,7 +177,7 @@
               <p>Led product definition for an enterprise Analytical Data Store on Kubernetes. 
                 Standardized ingestion and semantic metadata schemas to resolve fragmented, non-interoperable scientific data pipelines across global instrument ecosystems.</p>
             </div>
-            <strong>$650K immediate<br>$1.5M projected</strong>
+            <strong>Data Interoperability<br>Developer Experience</strong>
           </article>
         </div>
       </div>
@@ -269,31 +269,96 @@
     </section>
 
     <section id="projects" class="section projects" aria-labelledby="projects-title">
-      <div class="content-shell">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Selected work</p>
-            <h2 id="projects-title">Product Case Studies</h2>
-          </div>
-          <p>Three examples of turning complex enterprise and scientific problems into governed platforms with measurable outcomes.</p>
-        </div>
-        <div id="project-list" class="project-list" aria-live="polite">
-          <noscript>
-            <article class="project">
-              <div class="project-copy">
-                <p class="eyebrow">Product case study</p>
-                <h3>AI-Powered Scientific Research Assistant</h3>
-                <div class="case-study-details">
-                  <section><h4>Problem</h4><p>Researchers spent weeks manually analyzing large scientific datasets and publications.</p></section>
-                  <section><h4>Approach</h4><p>Shaped a governed GenAI and RAG platform with structured outputs and human validation.</p></section>
-                  <section><h4>Impact</h4><p>Reduced research analysis from months to weeks.</p></section>
-                </div>
-              </div>
-            </article>
-          </noscript>
-        </div>
+  <div class="content-shell">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Selected work</p>
+        <h2 id="projects-title">Product Case Studies</h2>
       </div>
-    </section>
+      <p>Three examples of turning complex enterprise and scientific problems into governed platforms with measurable outcomes.</p>
+    </div>
+    
+    <div id="project-list" class="project-list" aria-live="polite">
+      <!-- Fallback or Direct HTML Rendering for Case Study -->
+      <article class="project">
+        <div class="project-copy">
+          <p class="eyebrow">Product Case Study — AI & Platform Infrastructure</p>
+          <h3>AI-Powered Scientific Research Assistant</h3>
+          
+          <div class="case-study-meta">
+            <span><strong>Role:</strong> Technical Product Manager</span>
+            <span><strong>Stack:</strong> GPT, Claude, Gemini (Multi-Model Orchestration), LangChain, Vector Databases, Kubernetes</span>
+          </div>
+
+          <div class="case-study-details">
+            <!-- 1. The Context & Problem -->
+            <section class="cs-section">
+              <h4>⚠️ The Problem & Context</h4>
+              <p>Researchers and scientists spent weeks manually parsing through thousands of unstructured scientific publications, laboratory notebooks, and dense biochemical datasets. The process of finding, extracting, and cross-referencing information was slow, highly siloed, and prone to human error.</p>
+              
+              <h5>The Technical Hurdles:</h5>
+              <ul>
+                <li><strong>Hallucination Risks:</strong> In scientific and clinical environments, standard LLM hallucinations can completely invalidate research or cause costly laboratory footprint errors.</li>
+                <li><strong>Lack of Provenance:</strong> Standard generative text engines do not inherently track the precise origin or original coordinates of extracted facts.</li>
+                <li><strong>Data Silos:</strong> Scientific documents came in fragmented formats (PDFs, proprietary instrument files, genomic sequences) that traditional data pipelines failed to process cleanly.</li>
+              </ul>
+            </section>
+
+            <!-- 2. Strategy & Discovery -->
+            <section class="cs-section">
+              <h4>🛠️ Product Strategy & Discovery</h4>
+              <p>I steered the discovery phase by conducting user interviews with lead scientists to identify critical friction points. Instead of building a generic wrapper around a single AI model, I formulated a strategy for a multi-tenant, platform-level orchestration engine that processes unstructured documents into provenance-aware, structured scientific assets.</p>
+              
+              <h5>Key Product Trade-offs:</h5>
+              <ul>
+                <li><strong>Multi-LLM Strategy vs. Single Model Vendor:</strong> I opted to design a dynamic multi-model workflow utilizing GPT, Claude, and Gemini simultaneously. This was because certain models excelled at semantic reasoning, while others offered better cost-efficiency and performance thresholds for parsing huge tabular structures.</li>
+                <li><strong>Proactive Constraints over Passive Filtering:</strong> Instead of allowing free-form chat prompts, we built structured template frameworks that constrained LLM outputs into strictly validated schemas.</li>
+              </ul>
+            </section>
+
+            <!-- 3. Technical Core Pillars -->
+            <section class="cs-section">
+              <h4>🏗️ Platform Architecture & Pillars</h4>
+              <dl class="cs-features">
+                <dt>1. Dynamic RAG Pipeline</dt>
+                <dd>Engineered an enterprise-grade Retrieval-Augmented Generation pipeline handling ingestion, intelligent text chunking, and semantic metadata tagging over specialized knowledge-graph indexing strategies.</dd>
+                
+                <dt>2. Multi-Model Orchestration & Structured Outputs</dt>
+                <dd>Designed an extraction layer that converts raw text into structured JSON/Pydantic schemas, integrating programmatic validation routines to ensure responses adhere perfectly to predefined scientific data ontologies.</dd>
+                
+                <dt>3. Traceable Citation Provenance</dt>
+                <dd>Built precise metadata tracking systems where every generated insight or aggregated fact is tied back to its source document, page number, and bounding box coordinates, allowing scientists instant cross-verification.</dd>
+                
+                <dt>4. Human-In-The-Loop (HITL) Validation</dt>
+                <dd>Implemented structured review workflows where AI-generated conclusions require active validation from a credentialed scientist before being pushed into downstream laboratory execution layers, meeting strict enterprise governance and compliance criteria.</dd>
+              </dl>
+            </section>
+
+            <!-- 4. Execution Operating Model -->
+            <section class="cs-section">
+              <h4>🚀 Execution & Operating Model</h4>
+              <ul>
+                <li><strong>Spec-Driven Development (SDD):</strong> Pioneered an internal SDD framework using Markdown product specifications, allowing engineering squads to easily understand end-to-end user journeys and catch technical API dependency issues early.</li>
+                <li><strong>Pod & Squad Governance:</strong> Led 4 cross-functional delivery pods totaling 25 data scientists, machine learning engineers, and UX architects, establishing a governance cadence to unblock data pipelines, balance technical debt, and ensure operational readiness.</li>
+              </ul>
+            </section>
+
+            <!-- 5. Quantifiable Impact -->
+            <section class="cs-section highlight-impact">
+              <h4>📈 Measured Value Realization</h4>
+              <ul>
+                <li><strong>Drastic Velocity Boost:</strong> Successfully reduced scientific data extraction and synthesis workflows <strong>from weeks down to hours</strong>, allowing research teams to pivot on drug discovery strategies rapidly.</li>
+                <li><strong>100% Trust & Auditability:</strong> Achieved absolute enterprise data compliance by keeping all AI processes provenance-aware and bound by rigorous human-in-the-loop validation barriers.</li>
+                <li><strong>Platform Reusability:</strong> Designed the core extraction services to be accessible via highly structured REST API contracts, enabling other digital chemistry products across the company to tap into the platform capabilities.</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
 
     <section id="credentials" class="section credentials" aria-labelledby="credentials-title">
       <div class="content-shell">
