@@ -1,6 +1,6 @@
 # Kaushik Portfolio
 
-A static portfolio built with semantic HTML, CSS, and vanilla JavaScript. The live site is [https://kaushik.github.io/](https://kaushik.github.io/).
+A static portfolio built with semantic HTML, CSS, and vanilla JavaScript. The live site is [https://kaushiksundar-pm.github.io/](https://kaushiksundar-pm.github.io/).
 
 ## Preview
 
